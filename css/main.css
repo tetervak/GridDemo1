@@ -1,0 +1,33 @@
+#grid-main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "grid-sec-header grid-sec-header"
+            "grid-sec-first grid-sec-second"
+            "grid-sec-footer grid-sec-footer";
+    grid-gap: 1em
+}
+
+#grid-sec-header{
+    grid-area: grid-sec-header;
+    background:cadetblue;
+    padding: 0.5em;
+}
+
+#grid-sec-first{
+    grid-area: grid-sec-first;
+    background: bisque;
+    padding: 0.5em;
+}
+
+#grid-sec-second{
+    grid-area: grid-sec-second;
+    background: burlywood;
+    padding: 0.5em;
+}
+
+#grid-sec-footer{
+    grid-area: grid-sec-footer;
+    background: cadetblue;
+    padding: 0.5em;
+}
